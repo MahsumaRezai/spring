@@ -1,0 +1,44 @@
+// main 
+.main {
+    background: white;
+    height: 600px;
+    @media screen  and (max-width:915px){
+        height: 500px;  
+    }
+}
+.main-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    @media screen  and (max-width:915px){
+        padding-top: 10px;  
+    }
+}
+.main-text {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    &__para {
+        font-size: 13px;
+        color: #333;
+        padding-bottom: 20px;
+    }
+    &__title {
+        font-size: 32px; 
+        font-weight: 600;
+        line-height: 1.2;
+        padding-bottom: 20px;
+        @media screen  and (max-width:290px){
+            font-size: 15px;
+            
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    @media screen and (max-width:290px) {
+        padding-left: 40px;       
+       }
+}
