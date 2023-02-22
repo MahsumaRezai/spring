@@ -38,11 +38,17 @@ $font : sans-serif;
 .head-img {
     &__img  {
         border-radius: 50%;
+        @media screen and (max-width:550px) {
+            height: 200px;
+           
+    
+        }
         @media screen and (max-width:420px) {
             height: 200px;
            
     
         }
+
     }
 }
 .text-head {
@@ -61,6 +67,12 @@ $font : sans-serif;
      font-size: 70px;
      font-style: initial;
      color: white;
+   
+      @media screen and (max-width:550px) {
+         font-size: 30px;
+       
+
+    }
      @media screen and (max-width:420px) {
         font-size: 30px
 
@@ -90,4 +102,31 @@ $font : sans-serif;
      &__link:hover {
          color: black;
      }
+}
+
+// about section 
+.about-section {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     height: 400px;
+}
+.about-content{
+    &__title {
+        text-align: center;
+        color: #0BCEAF;
+        font-size: 50px;
+        font-family: $font;
+        font-weight: bold;
+        padding-bottom: 30px;
+        
+    }
+    &__text {
+        font-size: 20px;
+        font-family: $font;
+        color: #6c757d;
+        line-height: 1.625;
+        
+    }
 }

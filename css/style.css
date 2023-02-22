@@ -29,6 +29,9 @@
 
 .head-img__img {
   border-radius: 50%; }
+  @media screen and (max-width: 550px) {
+    .head-img__img {
+      height: 200px; } }
   @media screen and (max-width: 420px) {
     .head-img__img {
       height: 200px; } }
@@ -47,6 +50,9 @@
     font-size: 70px;
     font-style: initial;
     color: white; }
+    @media screen and (max-width: 550px) {
+      .text-head__fullname {
+        font-size: 30px; } }
     @media screen and (max-width: 420px) {
       .text-head__fullname {
         font-size: 30px; } }
@@ -68,3 +74,24 @@
 
 .button-head__link:hover {
   color: black; }
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 400px; }
+
+.about-content__title {
+  text-align: center;
+  color: #0BCEAF;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-bottom: 30px; }
+
+.about-content__text {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #6c757d;
+  line-height: 1.625; }
