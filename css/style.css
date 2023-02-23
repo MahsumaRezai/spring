@@ -75,42 +75,73 @@
 .button-head__link:hover {
   color: black; }
 
-.about-section {
+.about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px; }
+  height: 800px;
+  gap: 30px; }
+  @media screen and (max-width: 912px) {
+    .about {
+      height: 1500px;
+      margin-top: -500px; } }
+  .about__title {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #0BCEAF;
+    padding-bottom: 30px; }
+    @media screen and (max-width: 912px) {
+      .about__title {
+        padding-bottom: 10px;
+        font-size: 30px; } }
+  .about__text {
+    color: #6c757d;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.650;
+    text-align: center; }
+    @media screen and (max-width: 912px) {
+      .about__text {
+        font-size: 14px; } }
+    @media screen and (max-width: 770px) {
+      .about__text {
+        font-size: 13px; } }
+    @media screen and (max-width: 540px) {
+      .about__text {
+        text-align: center;
+        font-size: 12px; } }
+    @media screen and (max-width: 415px) {
+      .about__text {
+        font-size: 12px; } }
 
-.about-content__title {
-  text-align: center;
+.button__btn {
+  width: 600px;
+  height: 50px;
+  border: 1px solid #0BCEAF;
+  background: white;
+  border-radius: 50px; }
+  @media screen and (max-width: 912px) {
+    .button__btn {
+      width: 400px; } }
+  @media screen and (max-width: 770px) {
+    .button__btn {
+      width: 300px;
+      height: 30px; } }
+  @media screen and (max-width: 350px) {
+    .button__btn {
+      width: 200px; } }
+
+.button__btn:hover {
+  background-color: #0BCEAF; }
+
+.button__link:hover {
+  color: #6c757d; }
+
+.button__link {
   color: #0BCEAF;
-  font-size: 50px;
-  font-family: sans-serif;
-  font-weight: bold;
-  padding-bottom: 30px; }
-
-.about-content__text {
-  font-size: 18px;
-  font-family: sans-serif;
-  color: #6c757d;
-  line-height: 1.625;
-  text-align: center; }
-
-#icon {
-  width: 30px;
-  height: 30px; }
-
-#git {
-  width: 70px;
-  height: 50px; }
-
-.icon-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 200px;
-  gap: 20px; }
-
-.social {
-  display: flex;
-  flex-direction: row; }
+  font-size: 20px;
+  font-family: sans-serif; }
+  @media screen and (max-width: 912px) {
+    .button__link {
+      font-size: 15px; } }

@@ -105,53 +105,96 @@ $font : sans-serif;
 }
 
 // about section 
-.about-section {
+.about {
      display: flex;
-     flex-direction: row;
+     flex-direction:column;
      justify-content: center;
      align-items: center;
-     height: 400px;
-}
-.about-content{
-    &__title {
-        text-align: center;
-        color: #0BCEAF;
-        font-size: 50px;
-        font-family: $font;
-        font-weight: bold;
-        padding-bottom: 30px;
+     height: 800px;
+     gap: 30px;
+     @media screen and (max-width:912px) {
+        height: 1500px;
+        margin-top: -500px;
         
     }
-    &__text {
-        font-size: 18px;
-        font-family: $font;
-        color: #6c757d;
-        line-height: 1.625;
-        text-align: center;
+    
+     &__title {
+         font-size: 50px;
+         font-family: $font;
+         color: #0BCEAF;
+         padding-bottom: 30px; 
+         @media screen and (max-width:912px) {
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+ 
 
+     } 
+     &__text {
+         color: #6c757d;
+         font-family: $font;
+         font-size: 18px;
+         line-height: 1.650;
+         text-align: center;
+         @media screen and (max-width:912px) {
+             font-size: 14px;
+            
+        }
+        @media screen  and (max-width:770px){
+            font-size: 13px;
+            
+        }
+        @media screen  and (max-width:540px){
+            text-align: center;
+            font-size: 12px;
+            
+        }
+        @media screen  and (max-width:415px){
+            font-size: 12px;
+            
+        }
+     }
+}
+.button {
+    &__btn {
+        width: 600px;
+        height: 50px;
+        border:  1px solid #0BCEAF;
+        background: white;
+        border-radius: 50px;
+          @media screen and (max-width:912px) {
+           width: 400px;
+                
+         }
+         @media screen and (max-width:770px) {
+            width: 300px;
+            height: 30px;
+                 
+          }
+          @media screen  and (max-width:350px){
+            width: 200px;
+            
+        }
 
     }
-} 
-// icon section in about section
-#icon {
-    width: 30px;
-    height: 30px;
-}
-#git {
-    width: 70px;
-    height: 50px;
+    &__btn:hover {
+        background-color: #0BCEAF;
+        
+    }
+    &__link:hover {
+        color: #6c757d;
 
-}
-
-.icon-section {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    height: 200px;
-    gap: 20px;
-
-}
-.social {
-    display: flex;
-    flex-direction: row;
-
+    }
+    &__link {
+        color: #0BCEAF;
+        font-size: 20px;
+        font-family: $font;
+        @media screen and (max-width:912px) {
+            font-size: 15px;
+            
+            
+        }
+        
+        
+    }
 }
