@@ -202,3 +202,52 @@
     background: white;
     border: 1px solid #0BCEAF;
     border-radius: 20px; }
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  gap: 20px; }
+
+.skill-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 20px; }
+
+.title-skill__title {
+  color: #0BCEAF;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold; }
+
+.btn-skill {
+  width: 400px;
+  height: 30px;
+  background: gainsboro;
+  border: gainsboro 1px solid;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #0BCEAF; }
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 500px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; }
+
+.form-title {
+  color: #0BCEAF;
+  font-size: 50px;
+  font-family: sans-serif; }
