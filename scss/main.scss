@@ -211,13 +211,41 @@ $font : sans-serif;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    height: 650px;
+    height: 700px;
 }
 .image-one {
     width: 400px;
-    height: 200px;
+    height: 250px;
+    border : 5px solid #0BCEAF;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    box-shadow: 10px 10px 10px 10px gainsboro;
+
 }
+
+
 .image-two {
     width: 400px;
-    height: 200px;
+    height: 250px;
+    border : 5px solid #0BCEAF;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+    box-shadow: 10px 10px 10px 10px gainsboro;
 }
+.imag-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.protofilo-title {
+    &__title{
+         font-size: 50px;
+         font-family: $font;
+          color: #0BCEAF;
+          font-weight: bold;
+          
+    }
+}
+// 
