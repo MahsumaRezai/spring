@@ -36,6 +36,9 @@
     .head-img__img {
       height: 200px; } }
 
+.head-img__img:hover {
+  box-shadow: 10px 10px 10px 10px gold; }
+
 .text-head {
   display: flex;
   flex-direction: column;
@@ -283,6 +286,9 @@
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px; }
 
+.footer:hover {
+  border: 5px solid gold; }
+
 .foo {
   display: flex;
   flex-direction: row;
@@ -295,3 +301,5 @@
     font-family: sans-serif;
     font-size: 25px;
     text-decoration: underline; }
+  .foo__link:hover {
+    color: gold; }

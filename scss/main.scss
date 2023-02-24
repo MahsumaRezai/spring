@@ -40,15 +40,18 @@ $font : sans-serif;
         border-radius: 50%;
         @media screen and (max-width:550px) {
             height: 200px;
-           
-    
         }
         @media screen and (max-width:420px) {
             height: 200px;
-           
     
-        }
+        } 
 
+    }
+
+
+    &__img:hover {
+        box-shadow: 10px 10px 10px 10px gold;
+        
     }
 }
 .text-head {
@@ -363,11 +366,11 @@ $font : sans-serif;
     background-size: cover;
     border-top-left-radius: 150px;
     border-bottom-right-radius: 150px;
-
-
-   
+} 
+.footer:hover {
+    border: 5px solid gold;
 }
-   
+
 .foo {
     display: flex;
     flex-direction: row;
@@ -381,6 +384,9 @@ $font : sans-serif;
         font-size: 25px;
         text-decoration: underline;
 
+    }
+    &__link:hover {
+        color: gold;
     }
 
 }
