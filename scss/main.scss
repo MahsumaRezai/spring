@@ -153,6 +153,11 @@ $font : sans-serif;
             font-size: 12px;
             
         }
+        @media screen  and (max-width:400px){
+            font-size: 11px;
+            
+        }
+
      }
 }
 .button {
@@ -171,6 +176,11 @@ $font : sans-serif;
             height: 30px;
                  
           }
+          @media screen  and (max-width:400px){
+            width: 200px;
+            
+        }
+
           @media screen  and (max-width:350px){
             width: 200px;
             
@@ -187,8 +197,9 @@ $font : sans-serif;
     }
     &__link {
         color: #0BCEAF;
-        font-size: 20px;
+        font-size: 17px;
         font-family: $font;
+        text-decoration: none;
         @media screen and (max-width:912px) {
             font-size: 15px;
             
@@ -196,5 +207,41 @@ $font : sans-serif;
         }
         
         
+    }
+}
+// skill section 
+.skill-section {
+   height: 300px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center;
+
+}
+.content-skill {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.text-sill {
+    padding-bottom: 10px;
+    &__text {
+        font-size: 15px;
+        font-family: $font;
+        color: #6c757d;
+
+    }
+
+
+}
+// button section in skill section
+.button-skill {
+    &__btn {
+        width: 400px;
+        background: gainsboro;
+        height: 30px;
+        border:  1px solid gainsboro;
+        border-radius: 20px;
+
     }
 }
