@@ -80,11 +80,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 550px;
   gap: 30px; }
   @media screen and (max-width: 912px) {
     .about {
-      height: 1500px;
+      height: 1800px;
       margin-top: -500px; } }
   .about__title {
     font-size: 50px;
@@ -153,33 +153,18 @@
     .button__link {
       font-size: 15px; } }
 
-.skill {
-  display: grid;
-  grid-template-columns: repeat(2, 500px);
+.cotent-protofilo {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-items: center;
-  align-content: center;
-  gap: 20px;
-  height: 400px;
-  margin-top: -100px; }
+  gap: 30px;
+  height: 650px; }
 
-.title-skill {
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 50px;
-  color: #0BCEAF;
-  font-weight: bold; }
+.image-one {
+  width: 400px;
+  height: 200px; }
 
-.button-skill__btn {
-  width: 500px;
-  height: 30px;
-  background: gainsboro;
-  border: 1px solid gainsboro;
-  border-radius: 20px; }
-
-.text-skill {
-  font-size: 17px;
-  font-family: sans-serif;
-  color: #6c757d;
-  padding-bottom: 10px; }
+.image-two {
+  width: 400px;
+  height: 200px; }
