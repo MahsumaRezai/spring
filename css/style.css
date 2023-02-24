@@ -189,3 +189,16 @@
   font-family: sans-serif;
   color: #0BCEAF;
   font-weight: bold; }
+
+.btn-protfilo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; }
+  .btn-protfilo__btn {
+    width: 100px;
+    height: 30px;
+    background: white;
+    border: 1px solid #0BCEAF;
+    border-radius: 20px; }
