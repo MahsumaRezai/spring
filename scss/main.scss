@@ -112,7 +112,7 @@ $font : sans-serif;
      gap: 30px;
      @media screen and (max-width:912px) {
         height: 1800px;
-        margin-top: -500px;
+        margin-top: -600px;
         
     }
     
@@ -215,6 +215,24 @@ $font : sans-serif;
     align-items: center;
     gap: 30px;
     height: 700px;
+    @media screen  and (max-width:1500px) {
+        height: 2000px;
+        
+    }
+    @media screen and(max-width:1024px) {
+        height: 2000px;
+        
+    }
+    @media screen and (max-width:912px) {
+        height: 1800px ;
+        margin-top: -600px;
+
+        
+    }
+    @media screen  and (max-width:912px){
+        
+    }
+   
 }
 .image-one {
     width: 400px;
@@ -223,6 +241,10 @@ $font : sans-serif;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     box-shadow: 10px 10px 10px 10px gainsboro;
+    @media screen  and (max-width:420px){
+        width: 300px
+    }
+   
 
 }
 
@@ -234,6 +256,9 @@ $font : sans-serif;
     border-bottom-left-radius: 60px;
     border-top-right-radius: 60px;
     box-shadow: 10px 10px 10px 10px gainsboro;
+    @media screen  and (max-width:420px){
+        width: 300px
+    }
 }
 .imag-project {
     display: flex;
@@ -241,6 +266,17 @@ $font : sans-serif;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    @media screen  and (max-width:1500px) {
+        flex-direction: column;
+        
+    }
+    @media screen  and (max-width:1024px) {
+        flex-direction: column;
+        
+    }
+    
+   
+
 }
 .protofilo-title {
     &__title{
@@ -248,6 +284,10 @@ $font : sans-serif;
          font-family: $font;
           color: #0BCEAF;
           font-weight: bold;
+          @media screen  and (max-width:1024px){
+            font-size: 30px
+            
+        }
           
     }
 }
@@ -264,7 +304,16 @@ $font : sans-serif;
         background: white;
         border:1px solid #0BCEAF;
         border-radius: 20px;
+        @media screen  and (max-width:420px){
+            width: 80px
+        }
+        &__link {
+            @media screen  and (max-width:420px){
+                font-size: 10px;
+            }
+        }
     }
+    
     
 }
 // skill section 
@@ -290,6 +339,10 @@ $font : sans-serif;
         font-size: 50px;
         font-family: $font;
         font-weight: bold;
+        @media screen  and (max-width:1024px){
+            font-size: 30px
+            
+        }
         
     }
 }
@@ -301,6 +354,26 @@ $font : sans-serif;
     border: gainsboro 1px solid;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px #0BCEAF;
+    @media screen  and (max-width:912px){
+        width: 300px;
+        
+    }
+    @media screen  and (max-width:770px){
+        width: 200px;
+        
+    }
+    @media screen  and (max-width:550px){
+        width: 200px;
+        
+    }
+    @media screen  and (max-width:450px){
+        width: 200px;
+        
+    }
+    @media screen  and (max-width:400px){
+        width: 100px;
+        
+    }
 
 }  
 // form section 
@@ -311,6 +384,18 @@ $font : sans-serif;
     align-items: center;
     gap: 20px;
     height: 600px;
+    @media screen  and (max-width:912px){
+        height: 1200px;
+        margin-top: -400px;
+
+        
+    }
+    @media screen  and (max-width:850px){
+        height: 900px;
+        margin-top: -200px;
+
+        
+    }
 
 }
 .form {
@@ -319,12 +404,19 @@ $font : sans-serif;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    @media screen  and (max-width:850px){
+        
+    }
 }
 .form-title {
     color: #0BCEAF;
     font-size: 50px;
     font-family: $font;
     font-weight: bold;
+    @media screen  and (max-width:1024px){
+        font-size: 30px
+        
+    }
 
 }
 .form-input {
@@ -334,8 +426,13 @@ $font : sans-serif;
         border: 1px solid #6c757d;
         border-radius: 30px;
         padding-left: 20px;
+        @media screen  and (max-width:850px){
+            width: 300px;
+            
+        }
 
     }
+   
 }
 .textarea {
     width: 600px;
@@ -344,6 +441,10 @@ $font : sans-serif;
     border-bottom-right-radius: 50px;
     padding-left: 30px;
     padding-top: 10px;
+    @media screen  and (max-width:850px){
+        width: 300px;
+        
+    }
 
 }
 // submit section 
@@ -355,6 +456,10 @@ $font : sans-serif;
         background: white;
         color:#0BCEAF;
         border-radius: 30px;
+        @media screen  and (max-width:850px){
+            width: 100px;
+            
+        }
 
     }
 }
@@ -366,6 +471,7 @@ $font : sans-serif;
     background-size: cover;
     border-top-left-radius: 150px;
     border-bottom-right-radius: 150px;
+   
 } 
 .footer:hover {
     border: 5px solid gold;
@@ -378,11 +484,37 @@ $font : sans-serif;
     align-items: center;
     padding-top: 100px;
     gap: 50px;
+    @media screen  and (max-width:550px){
+        flex-direction: column;
+        padding-top: 50px
+        
+    }
     &__link {
         color: white;
         font-family: $font;
         font-size: 25px;
         text-decoration: underline;
+        @media screen  and (max-width:1500px){
+            font-size: 20px;
+            
+        }
+        
+        @media screen  and (max-width:950px){
+            font-size: 15px;
+            
+        }
+        @media screen  and (max-width:820px){
+            font-size: 14px;
+            
+        }
+        @media screen  and (max-width:770px){
+            font-size: 15px;
+            
+        }
+        @media screen  and (max-width:550px){
+            font-size: 15px;
+            
+        }
 
     }
     &__link:hover {
