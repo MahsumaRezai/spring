@@ -1,0 +1,47 @@
+
+// animation
+.animation {
+    height: 1000px;
+    width: 100%;
+    padding-top:100px;
+
+}
+.ani {
+    background-image: url(../image/img_one.jpg);
+    height: 800px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0% auto;
+    animation-name: img;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+     border:  3px solid #0BCEAF;
+    @media screen  and (max-width:1500px){
+        width: 50%;
+        height: 600px;
+
+        
+    }
+    @media screen  and (max-width:550px){
+        width: 80%;
+        height: 400px;
+
+        
+    }
+}
+@keyframes img {
+    0% {background-image: url(../image/img_two.jpg)}
+    25% {background-image: url(../image/img_three.jpeg)}
+    50% {background-image: url(../image/im_four.png)}
+    75% {background-image: url(../image/img_five.jpg)}
+    100% {background-image: url(../image/img_six.jpg)}
+
+
+}

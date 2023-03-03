@@ -1,0 +1,81 @@
+.head-section {
+    width: 100%;
+    height: 700px;
+    background:url(../image/main.jpg);
+    background-repeat: round;
+    background-size: cover;
+    animation-name: imge;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-direction: normal;
+}
+@keyframes imge  {
+    0% {background-image: url(../image/img_two.jpg)}
+    25% {background-image: url(../image/img_three.jpeg)}
+    50% {background-image: url(../image/im_four.png)}
+    75% {background-image: url(../image/img_five.jpg)}
+    100% {background-image: url(../image/img_six.jpg)}
+
+}
+.head-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-top: 150px;
+    @media screen and (max-width:1024px) {
+        padding-top: 50px;
+        gap: 30px
+
+    }
+    @media screen and (max-width:920px) {
+       flex-direction: column;
+       text-align: center;
+       gap: 20px;
+    }
+}
+.head-img {
+    &__img  {
+        border-radius: 50%;
+        @media screen and (max-width:550px) {
+            height: 200px;
+        }
+        @media screen and (max-width:420px) {
+            height: 200px;
+    
+        } 
+
+    }
+
+    &__img:hover {
+        box-shadow: 10px 10px 10px 10px gold;
+        
+    }
+}
+.text-head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__few-text {
+        color: white;
+        font-size: 25px;
+        font-family: $font;
+        font-style: normal;
+
+}
+ &__fullname  {
+     font-family: sans-serif;
+     font-size: 70px;
+     font-style: initial;
+     color: white;
+   
+      @media screen and (max-width:550px) {
+         font-size: 30px;
+    }
+     @media screen and (max-width:420px) {
+        font-size: 30px
+    }
+ }
+}
+

@@ -77,24 +77,6 @@
       .text-head__fullname {
         font-size: 30px; } }
 
-.button-head__btn {
-  width: 200px;
-  height: 50px;
-  background: #0BCEAF;
-  border: 1px solid white;
-  border-radius: 50px; }
-
-.button-head__btn:hover {
-  background: white; }
-
-.button-head__link {
-  color: white;
-  font-size: 17px;
-  font-family: sans-serif; }
-
-.button-head__link:hover {
-  color: black; }
-
 .cotent-protofilo {
   display: flex;
   flex-direction: column;
