@@ -11,15 +11,17 @@ function form() {
     let subject = document.getElementById("sub").value;
     let vaild = true;
     if (username == "") {
-        alert("write your name");
+        document.getElementById("name").style.border = "1px solid red";
         vaild = false;
     }
     if (emailuser == "") {
-        alert("write your Email");
+        document.getElementById("email").style.border = "1px solid red";
+
         vaild = false;
     }
     if (subject == "") {
-        alert("write your subject");
+        document.getElementById("sub").style.border = "1px solid red";
+
         vaild = false;
     }
     return vaild;
